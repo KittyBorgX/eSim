@@ -1,11 +1,11 @@
 #!/bin/bash
 #=============================================================================
 #          FILE: install-eSim.sh
-# 
-#         USAGE: ./install-eSim.sh --install 
+#
+#         USAGE: ./install-eSim.sh --install
 #                            OR
 #                ./install-eSim.sh --uninstall
-#                
+#
 #   DESCRIPTION: Installation script for eSim EDA Suite
 #
 #       OPTIONS: ---
@@ -30,7 +30,7 @@ get_ubuntu_version() {
 # Function to choose and run the appropriate script
 run_version_script() {
     SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/install-eSim-scripts"
-    
+
     # Decide script based on full version
     case $VERSION_ID in
         "22.04")
@@ -45,6 +45,9 @@ run_version_script() {
             ;;
         "24.04")
             SCRIPT="$SCRIPT_DIR/install-eSim-24.04.sh"
+            ;;
+        "25.04")
+            SCRIPT="$SCRIPT_DIR/install-eSim-25.04.sh"
             ;;
         *)
             echo "Unsupported Ubuntu version: $VERSION_ID ($FULL_VERSION)"
