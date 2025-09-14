@@ -6,6 +6,8 @@ eSim Packaging
 
 > Disclaimer: All the code has been bundled into a zip file located in [Ubuntu-25.04](Ubuntu-25.04/) since there are changes to the `nghdl` package as well which cannot be included in this repository. Instructions for building are noted below.
 
+eSim 2.5 now successfully builds and works on Ubuntu 25.04!
+
 ### Installation of the modified version for Ubuntu 25.04:
 
 1. Clone the forked repository and checkout the installers branch:
@@ -31,10 +33,14 @@ chmod +x install-eSim.sh
 
 4. Installation should proceed normally and successfully install on Ubuntu 25.04
 
+### Report
 
-It contains all the documentation for packaging eSim for distribution.
+A detailed report can be found [here (click this)](Ubuntu-25.04/eSim_25.04_krishna_report.pdf)
+
 
 # Packaging eSim for Distribution:
+
+It contains all the documentation for packaging eSim for distribution.
 
 1. eSim is currently packaged and distributed for Ubuntu OS (Linux) and MS Windows OS.
 
