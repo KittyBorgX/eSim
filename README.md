@@ -28,7 +28,7 @@ mv Ubuntu-25.04/eSim-2.5.zip /home/krishna/
 unzip eSim-2.5.zip
 cd eSim-2.5
 chmod +x install-eSim.sh
-./install.sh --install
+./install-eSim.sh --install
 ```
 
 4. Installation should proceed normally and successfully install on Ubuntu 25.04
